@@ -1,0 +1,23 @@
+{
+  "name": "Playwright Training",
+  "image": "mcr.microsoft.com/playwright:v1.54.0-noble",
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-playwright.playwright",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "ms-vscode.vscode-typescript-next"
+      ]
+    }
+  },
+
+  "postCreateCommand": "npm install",
+
+  "forwardPorts": [3000, 9323],
+
+  "hostRequirements": {
+    "cpus": 2
+  }
+}

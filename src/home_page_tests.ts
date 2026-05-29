@@ -5,6 +5,7 @@ console.log("Running home page tests...");
 
 
 // Adding More Test cases
+// Fixing some issues in the test cases
 
-console.log("Home page tests completed");
-console.log("All tests passed successfully");
+console.log("Home page tests completed - successfully");
+console.log("Some Tests failed - check the logs for details");

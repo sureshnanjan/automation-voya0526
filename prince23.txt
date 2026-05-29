@@ -1,0 +1,71 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260528074502
+Username: princeadmin\princeadmin
+RunAs User: princeadmin\princeadmin
+Configuration Name: 
+Machine: princeadmin (Microsoft Windows NT 10.0.26100.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 4988
+PSVersion: 5.1.26100.32684
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.32684
+BuildVersion: 10.0.26100.32684
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is prince23.txt
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526> ls
+
+
+    Directory: C:\Users\princeadmin\prince_voya2026\automation-voya0526
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         5/28/2026   6:29 AM                .devcontainer
+-a----         5/28/2026   6:29 AM           2308 .gitignore
+-a----         5/28/2026   6:29 AM          11558 LICENSE
+-a----         5/28/2026   7:45 AM              0 prince23.txt
+-a----         5/28/2026   6:29 AM              0 readme.txt
+
+
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526> git add .
+
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526> git commit -m “Adding first file to branch”
+
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526>  git config --global user.email "princeparashar.muz@gmail.com"
+
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526>  git config --global user.name "prince kumar"
+
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526> git commit -m “Adding first file to branch”
+
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526> git status
+
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526> git push
+
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526>  git push --set-upstream origin prince_playwright
+
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526> git push
+
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526> git push --set-upstream origin prince_playwright
+
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526> git push
+
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526> git pull
+ * [new branch]      Nagaraj-branch        -> origin/Nagaraj-branch
+ * [new branch]      Sneha_Branch          -> origin/Sneha_Branch
+   b97b58a..4671308  main                  -> origin/main
+ * [new branch]      rahulverma1907-branch -> origin/rahulverma1907-branch
+ * [new branch]      samruddhi-branch      -> origin/samruddhi-branch
+ * [new branch]      sandeshbranch-branch  -> origin/sandeshbranch-branch
+ * [new branch]      sayantanpw-branch     -> origin/sayantanpw-branch
+ * [new branch]      soundarya-branch      -> origin/soundarya-branch
+   ea47eb0..788530b  suresh-trainer        -> origin/suresh-trainer
+ * [new branch]      sushmaPW1-branch      -> origin/sushmaPW1-branch
+ * [new branch]      suvam-branch          -> origin/suvam-branch
+Already up to date.
+PS C:\Users\princeadmin\prince_voya2026\automation-voya0526> git rebase origin/main
+

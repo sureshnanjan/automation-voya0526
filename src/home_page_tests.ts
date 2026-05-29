@@ -9,7 +9,7 @@ console.log("Running home page tests...");
 
 console.log("Home page tests completed - successfully");
 console.log("Some Tests failed - check the logs for details");
-console.log("Prince- check the logs for details");
+console.log("Sushma- check the logs for details");
 
 const myvalue: string = "Hello, World!";
 console.log(myvalue);

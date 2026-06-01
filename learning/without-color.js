@@ -9,3 +9,7 @@ console.log(color("Error", "red+blink"));
 
 // Print the word "Success" in bold green, followed by a message
 console.log(color("Success", "green+bold"), "This is to demo external Packages");
+
+
+// Print the word "Dileep" in bold yellow, followed by a message
+console.log(color("Dileep", "yellow+bold"), "This is the code added by Dileep");

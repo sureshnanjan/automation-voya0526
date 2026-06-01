@@ -9,3 +9,6 @@ console.log(color("Error", "red+blink"));
 
 // Print the word "Success" in bold green, followed by a message
 console.log(color("Success", "green+bold"), "This is to demo external Packages");
+
+//print text "Samruddhi executing first code"
+console.log(color("Samruddhi executing first code", "yellow"));

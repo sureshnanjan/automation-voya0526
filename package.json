@@ -4,7 +4,7 @@
   "description": "Automation tests for Voya project",
   "type": "module",
   "scripts": {
-    "suresh": "node learning/without-color.js"
+    "aditya": "node learning/without-color.js"
   },
   "devDependencies": {
     "@playwright/test": "^1.60.0",

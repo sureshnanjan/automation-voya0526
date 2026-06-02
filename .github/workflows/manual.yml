@@ -24,3 +24,4 @@ jobs:
       - run: npm test
       - run: npm run sushma
       - run: npm run pet_store
+      - run: npm run suresh

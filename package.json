@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Automation tests for Voya project",
   "scripts": {
-    "suresh": "node learning/without-color.js"
+    "Arshitha": "node learning/without-color.js"
   },
 
   "devDependencies": {
     "ansi-color": "^0.2.2"
   }
-}
+

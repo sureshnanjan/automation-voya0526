@@ -14,3 +14,7 @@ console.log(color("Success", "green+bold"), "This is to demo external Packages")
 
 // Print the word "Rahul Verma" in red and underlined
 console.log(color("Rahul Verma", "red+blink"));
+
+
+// Print the word "Rahul Verma" in red and underlined
+console.log(color("Rahul Verma", "red+blink"));

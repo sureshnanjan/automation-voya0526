@@ -6,6 +6,7 @@
   "scripts": {
     "suresh": "node learning/without-color.js",
     "prince": "node learning/without-color.js",
+    "prince": "node learning/without-color.js",
     "prince2": "node learning/pet_store_model.js"
   },
   "devDependencies": {

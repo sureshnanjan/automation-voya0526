@@ -21,9 +21,4 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
-<<<<<<< HEAD
       - run: npm run rahul
-      - run: npm run petStore
-=======
-      - run: npm run rahul
-      - run: npm run petStore

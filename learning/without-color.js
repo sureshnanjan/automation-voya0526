@@ -9,3 +9,4 @@ console.log(color("Error", "red+blink"));
 
 // Print the word "Success" in bold green, followed by a message
 console.log(color("Success", "green+bold"), "This is to demo external Packages");
+console.log(color("Prince", "yellow"), "My self prince");

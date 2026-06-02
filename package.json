@@ -4,7 +4,8 @@
   "description": "Automation tests for Voya project",
   "type": "commonjs",
   "scripts": {
-    "suresh": "node learning/without-color.js"
+    "suresh": "node learning/without-color.js",
+    "prince": "node learning/without-color.js"
   },
   "devDependencies": {
     "@types/node": "^25.9.1",

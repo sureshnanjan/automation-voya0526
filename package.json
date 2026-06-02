@@ -4,11 +4,8 @@
   "description": "Automation tests for Voya project",
   "type": "module",
   "scripts": {
-    "lint": "npx tsc --noEmit",
     "suresh": "node learning/without-color.js",
-    "prince": "node learning/without-color.js",
-    "prince": "node learning/without-color.js",
-    "prince2": "node learning/pet_store_model.js"
+    "prince": "node learning/without-color.js"
   },
   "devDependencies": {
     "@types/node": "^25.9.1",

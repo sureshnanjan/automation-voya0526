@@ -14,5 +14,11 @@ console.log(color("Success", "green+bold"), "This is to demo external Packages")
 
 // Print my choice of color
 console.log(color("RCB", "red+blink"), "ee sala cup namde");
+
 console.log(color("Only One"))
 console.log(color("one","red", "third"))
+
+
+// Print my choice of color
+console.log(color("San", "red+blink"), "My name is San ");
+

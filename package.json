@@ -6,8 +6,6 @@
   "scripts": {
     "Arshitha": "node learning/without-color.js",
     "petstore": "node learning/pet_store_model.js"
-    
-    
   },
   "devDependencies": {
     "@types/node": "^25.9.1",
@@ -17,5 +15,8 @@
     "tsx": "^4.22.4",
     "typescript": "^6.0.3"
   }
+<<<<<<< HEAD
 }
+=======
+>>>>>>> d1b2dfd (Arshitha Change)
 

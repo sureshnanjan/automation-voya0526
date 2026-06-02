@@ -21,5 +21,6 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
+      - run: npm run suresh
       - run: npm run aditya
       - run: npm run finch

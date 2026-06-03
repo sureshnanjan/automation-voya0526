@@ -22,4 +22,7 @@ jobs:
           node-version: 22
       - run: npm ci
       - run: npm run chaitanya
+<<<<<<< HEAD
       - run: npm run pet-store
+=======
+>>>>>>> c36ba0c8787accc9b367efc8c13b425144ce0340

@@ -8,11 +8,7 @@ const dog_category = {id:2,name:"dog"};
 const cat_category = {id:3,name:"cat"};
 const reptiles_category = {id:4,name:"reptiles"};
 const birds_category = {id:5,name:"birds"};
-console.log(fish_category);
-console.log(dog_category);
-console.log(cat_category);
-console.log(reptiles_category);
-console.log(birds_category);
+console.log(fish_category, dog_category, cat_category, reptiles_category, birds_category);
 
 const Angelfish = {id: 100,category	:fish_category,
 name: "angel_fish",

@@ -4,7 +4,8 @@
   "description": "Automation tests for Voya project",
   "type": "module",
   "scripts": {
-    "rahul": "node learning/without-color.js"
+    "rahul": "node learning/without-color.js",
+    "petStore" : "node learning/pet_store_model.js"
   },
   "devDependencies": {
     "@types/node": "^25.9.1",

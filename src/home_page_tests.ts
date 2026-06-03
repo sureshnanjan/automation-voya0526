@@ -9,8 +9,4 @@ console.log("Running home page tests...");
 
 console.log("Home page tests completed - successfully");
 console.log("Some Tests failed - check the logs for details");
-<<<<<<< HEAD
 console.log("Prince- check the logs for details");
-=======
-console.log("Akshith: Fixed title validation issue")
->>>>>>> d8718dd (fixed locator issue)

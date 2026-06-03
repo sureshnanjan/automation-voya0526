@@ -12,3 +12,15 @@ name: "angel_fish",
 photoUrls:	["fish1.jpg", "fish2.jpg    "],
 tags:["pet", "aquatic"],
 status: "available"}
+
+const Bulldog = {id: 300,category	:dog_category,name: "bull_dog",photoUrls:	["dog1.jpg", "dog2.jpg    "],tags:["pet", "aquatic"],status: "available"}
+
+const dogorder = {
+    id:300,
+    petId: 2,
+    shipdate: "06/03/2026-12:30:30",
+    status: "placed",
+    complete : true
+}
+
+console.log(dogorder);

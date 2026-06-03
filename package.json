@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "Automation tests for Voya project",
   "scripts": {
+<<<<<<< HEAD
     "rahul": "node learning/without-color.js",
     "petStore" : "node learning/pet_store_model.js"
+=======
+    "rahul": "node learning/without-color.js"
+>>>>>>> a9cb65c287611845c12523ac9ca80e73bdc90280
   },
 
   "devDependencies": {

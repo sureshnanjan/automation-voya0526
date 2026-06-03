@@ -4,8 +4,12 @@
   "description": "Automation tests for Voya project",
   "scripts": {
     "suresh": "node learning/without-color.js",
+<<<<<<< HEAD
     "prince": "node learning/without-color.js",
     "prince2": "node learning/pet_store_model.js"
+=======
+    "prince": "node learning/without-color.js"
+>>>>>>> c04fddddbdf6db22848838aa1b435138cc1eb208
   },
 
   "devDependencies": {

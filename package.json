@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Automation tests for Voya project",
   "scripts": {
-    "suresh": "node learning/without-color.js"
+    "soundarya": "node learning/without-color.js"
   },
 
   "devDependencies": {

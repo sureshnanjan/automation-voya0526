@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "Automation tests for Voya project",
   "scripts": {
-    "Arshitha": "node learning/without-color.js"
+    "Arshitha": "node learning/without-color.js",
+    "petstore": "node learning/pet_store_model.js"
+    
+    
   },
 
   "devDependencies": {
     "ansi-color": "^0.2.2"
   }
+}
 

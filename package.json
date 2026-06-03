@@ -6,8 +6,8 @@
     "suresh": "node learning/without-color.js",
     "kailash": "node learning/without-color.js"
   },
-
   "devDependencies": {
-    "ansi-color": "^0.2.2"  
+    "ansi-color": "^0.2.2"
   }
 }
+

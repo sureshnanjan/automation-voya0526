@@ -1,12 +1,11 @@
 // Load the module
 var color = require("ansi-color").set;
 
-// Print the word "Error" to stdout in red
+// Print the word "Error" to stdout in yellow
 console.log(color("Error", "yellow"));
 
-// Print the word "Error" in red and underlined
+// Print the word "Error" in red and blinking
 console.log(color("Error", "red+blink"));
 
 // Print the word "Success" in bold green, followed by a message
-console.log(color("Success", "green+bold"), "This is to demo external Packages");
-
+console.log(color("Success", "green+bold"), "This is to demo external packages");

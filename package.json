@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "description": "Automation tests for Voya project",
   "scripts": {
-    "suresh": "node learning/without-color.js"
+    "suresh": "node learning/without-color.js",
+    "kailash": "node learning/without-color.js",
+    "pet": "node learning/pet_store_model.js",
+    "pet-model": "node learning/pet_store_model.js"
+    
   },
-
   "devDependencies": {
     "ansi-color": "^0.2.2"
   }
 }
+

@@ -36,6 +36,13 @@ console.log(Iguana);
 
 
 
+const tag = {
+    id: 1,
+    name: "pet"
+};
+console.log(tag);   
+
+
 const  online_order={
   id:1,
    petId: 100,
@@ -45,6 +52,19 @@ const  online_order={
    complete: false 
 }
 console.log(online_order);
+
+const user_001={id: 1,
+     firstName: "user", 
+     lastName: "001",
+    email:"user001@example.com",
+    password: "password123",
+    phone: "123-456-7890",
+    userStatus: 400,
+}
+console.log(user_001);
+
+
+
 
 
 

@@ -10,5 +10,5 @@ console.log(color("Error", "red+blink"));
 // Print the word "Success" in bold green, followed by a message
 console.log(color("Success", "green+bold"), "This is to demo external Packages");
 
-// Print  my name "Soundarya"with yellow clr
-console.log(color("Soundarya","yellow"));
+// Print  my name "soundarya"with yellow clr
+console.log(color("soundarya","yellow"));

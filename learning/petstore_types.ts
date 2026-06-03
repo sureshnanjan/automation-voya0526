@@ -91,14 +91,32 @@ console.log(result)
 
 //TODO:
 // Create a collection of API Response 
+<<<<<<< HEAD
 const myresponses:ApiResponse[] = []
+=======
+const myresponses:ApiResponse[] = [
+    {code: 200, type: "success", message: "Operation completed successfully"},
+    {code: 100, type: "info", message: "Request received"},
+    {code: 400, type: "error", message: "Bad request"},
+    {code: 100, type: "warning", message: "Deprecated endpoint"},
+    {code: 200, type: "success", message: "Data retrieved successfully"}
+]
+
+>>>>>>> c29f344 (pet store changes updated)
 // Filter out all the Responses with code 100
+const filteredByCode = myresponses.filter(response => response.code !== 100)
 
 // Filter out all the responses with message  "success" case insensitive
+const filteredBySuccess = myresponses.filter(response => !response.message.toLowerCase().includes("success"))
 
 // Sort the response collection as per type
+const sortedByType = myresponses.sort((a, b) => a.type.localeCompare(b.type))
 
 // For every response add the string "PROCESSED" to the message attribute
+const processedResponses = myresponses.map(response => ({
+    ...response,
+    message: response.message + " - PROCESSED"
+}))
 
 const sample:ApiResponse = {code:100,type:"Server",message:"Successfly Created: PROCESSED"}
 

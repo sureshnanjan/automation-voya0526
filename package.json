@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Automation tests for Voya project",
   "scripts": {
-    "sayantan": "node learning/without-color.js"
+    "sayantan": "node learning/without-color.js",
+    "sayantan_pet_store": "node learning/pet_store_model.js"
+
   },
 
   "devDependencies": {

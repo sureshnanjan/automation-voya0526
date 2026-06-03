@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Automation tests for Voya project",
   "scripts": {
-    "Vishwesh": "node learning/without-color.js"
+    "Vishwesh": "node learning/without-color.js",
+    "pet_store_model": "node learning/pet_store_model.js",
   },
 
   "devDependencies": {

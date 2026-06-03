@@ -22,3 +22,5 @@ jobs:
           node-version: 24
       - run: npm ci
       - run: npm run kailash
+      - run: npm run pet
+      

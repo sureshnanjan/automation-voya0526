@@ -4,7 +4,6 @@
 const api_success = {code: 200, type: "success", message: "successful operation"};
 
 const fish_category = {id: 1, name: "fish"};
-const dog_category = {id: 2, name: "dog"};
 const cat_category = {id: 3, name: "cat"};
 
 const Angelfish = {
@@ -32,33 +31,18 @@ const Paras = {
   status: "available"
 };
 
-const Whiskers = {
-  id: 202,
-  category: cat_category,
-  name: "Whiskers",
-  photoUrls: ["cat1.jpg", "cat2.jpg"],
-  tags: [
-    {id: 1, name: "pet"},
-    {id: 4, name: "feline"}
-  ],
-  status: "available"
+const bird_category = {id: 301, name: "bird"};
+const parrot={
+    id: 301,
+    category: bird_category,
+    name: "Parrot",
+    photoUrls: ["bird1.jpg", "bird2.jpg"],
+    tags: [
+        {id: 1, name: "pet"},
+        {id: 5, name: "exotic"}
+    ],
+    status: "available"
 };
-
-// Console output for changes
-console.log("=== Pet Store Model Objects ===");
-console.log("API Success Response:", api_success);
-console.log("\nCategories:");
-console.log("Fish Category:", fish_category);
-console.log("Dog Category:", dog_category);
-console.log("Cat Category:", cat_category);
-console.log("\nPet Objects:");
-console.log("Angelfish:", JSON.stringify(Angelfish, null, 2));
-console.log("Paras:", JSON.stringify(Paras, null, 2));
-console.log("Whiskers:", JSON.stringify(Whiskers, null, 2));
-console.log("=== Changes Made ===");
-console.log("✓ Fixed duplicate dog_category declaration");
-console.log("✓ Converted tags to object array format");
-console.log("✓ Added Whiskers cat object");
-console.log("✓ Standardized formatting across all objects");
-
+console.log("Paras:", Paras);
+console.log("Parrot:", parrot);
 

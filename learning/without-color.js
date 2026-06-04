@@ -12,3 +12,5 @@ console.log(color("Success", "green+bold"), "This is to demo external Packages")
 
 // Print  my name "Arshitha"with yellow clr
 console.log(color("Arshitha","yellow"));
+console.log(color("Only One"));
+console.log(color("one","red", "third"));

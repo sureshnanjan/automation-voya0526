@@ -33,3 +33,30 @@ tags:["pet", "bird"],
 status: "available"}
 
 console.log(Finch);
+
+const tag = {
+    id: 18,
+    name: "pet"
+};
+console.log(tag);   
+
+
+const  order={
+  id:18,
+   petId: 10,
+   quantity: 3,
+   shipDate: "",
+   status: "placed",
+   complete: false 
+}
+console.log(order);
+
+const user_18={id: 18,
+     firstName: "user", 
+     lastName: "18",
+    email:"user18@example.com",
+    password: "password123",
+    phone: "123-456-7890",
+    userStatus: 400,
+}
+console.log(user_18);

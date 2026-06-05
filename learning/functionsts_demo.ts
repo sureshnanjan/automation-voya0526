@@ -29,25 +29,4 @@ function customSortTS(array: string[]): string[] {
 }
 const namests: string[] = ["Alice", "Bob", "Charlie", "David", "Eve"];
 console.log(customSortTS(namests));
-//console.log(customSortTS(marks)); 
-
-const myvalue: string = "Hello, World!";
-const mybehaviur = function(param1: string,param2:number): void {
-    console.log("This is a function without return value");
-}
-mybehaviur();
-
-const myarrwo = () => console.log("This is an arrow function without return value");
-
-const mmyarrowfunction = (): void => {
-    console.log("This is an arrow function without return value");
-}
-
-function processResponse(response: ApiResponse): void {
-    if (response.code === 200) {
-        console.log("Success:", response.message);
-    } else {
-        console.log("Error:", response.message);
-    }  }
-*/
-    
+console.log(mymarks); 

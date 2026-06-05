@@ -9,5 +9,11 @@ console.log(color("Error", "red+blink"));
 
 // Print the word "Success" in bold green, followed by a message
 console.log(color("Success", "green+bold"), "This is to demo external Packages");
+<<<<<<< HEAD
 console.log(color("Only One"))
 console.log(color("one","red", "third"))
+=======
+
+//Print my choice of color
+console.log(color("Sayantan", "blue"), "is my name");
+>>>>>>> 27c6d7f (Added Sayantan's changes)

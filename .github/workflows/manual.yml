@@ -21,5 +21,9 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
+<<<<<<< HEAD
       - run: npm run sayantan
       - run: npm run sayantan_pet_store
+=======
+      - run: npm run sayantan
+>>>>>>> 8b500b0 (updated yml file)

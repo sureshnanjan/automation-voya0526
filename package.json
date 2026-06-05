@@ -4,8 +4,13 @@
   "description": "Automation tests for Voya project",
   "type": "commonjs",
   "scripts": {
+<<<<<<< HEAD
     "sayantan": "node learning/without-color.js",
     "sayantan_pet_store": "node learning/pet_store_model.js"
+=======
+    "sayantan": "node learning/without-color.js"
+  },
+>>>>>>> 8b500b0 (updated yml file)
 
   },
   "devDependencies": {

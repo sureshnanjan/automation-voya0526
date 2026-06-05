@@ -7,7 +7,10 @@
     "lint": "npx tsc --noEmit",
     "suresh": "node learning/without-color.js",
     "prince": "node learning/without-color.js",
+<<<<<<< HEAD
     "prince": "node learning/without-color.js",
+=======
+>>>>>>> 69d536661f952895748bee02367f8090397aa276
     "prince2": "node learning/pet_store_model.js"
   },
   "devDependencies": {

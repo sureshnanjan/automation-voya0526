@@ -4,6 +4,7 @@
   "description": "Automation tests for Voya project",
   "type": "commonjs",
   "scripts": {
+    "lint": "npx tsc --noEmit",
     "suresh": "node learning/without-color.js",
     "prince": "node learning/without-color.js",
     "prince2": "node learning/pet_store_model.js"

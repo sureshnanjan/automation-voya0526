@@ -60,7 +60,7 @@ type customUnion = custom1 | custom2;
 type customIntersection = custom1 & custom2;
 
 const mycustomValue1: customUnion = {attrib2: 42, attrib1: "Hello"};
-const customInterValue: customIntersection = {attrib1: "Hello"};
+const customInterValue: customIntersection = {attrib1: "Hello", attrib2: 42};
 
 type myType = string | number | boolean| {myattrib: string};
  

@@ -11,4 +11,4 @@ function customSortTS(array: string[]): string[] {
 }
 const namests: string[] = ["Alice", "Bob", "Charlie", "David", "Eve"];
 console.log(customSortTS(namests));
-console.log(customSortTS(marks)); 
+console.log(mymarks); 

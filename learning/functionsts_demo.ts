@@ -26,22 +26,3 @@ function customSortTS(array: string[]): string[] {
 const namests: string[] = ["Alice", "Bob", "Charlie", "David", "Eve"];
 console.log(customSortTS(namests));
 console.log(mymarks); 
-
-// Map-based transformations
-function doubleNumbers(arr: number[]): number[] {
-    return arr.map(n => n * 2);
-}
-
-function addTwo(arr: number[]): number[] {
-    return arr.map(n => n + 2);
-}
-
-function squareNumbers(arr: number[]): number[] {
-    return arr.map(n => n ** 2);
-}
-
-// Example usage
-const sampleNumbers: number[] = [4, 5, 6];
-console.log('Doubled:', doubleNumbers(sampleNumbers));
-console.log('PlusTwo:', addTwo(sampleNumbers));
-console.log('Squared:', squareNumbers(sampleNumbers));

@@ -7,6 +7,9 @@
     "sayantan": "node learning/without-color.js",
     "sayantan_pet_store": "node learning/pet_store_model.js"
 
+    "sayantan": "node learning/without-color.js",
+    "sayantan_pet_store": "node learning/pet_store_model.js"
+
   },
   "devDependencies": {
     "@types/node": "^25.9.1",

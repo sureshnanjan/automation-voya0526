@@ -53,21 +53,22 @@ const banner_color = "green"
 const banner_font_size = "24px"
 const banner_text = "Fork me on GitHub"
 const banner_position = "top-right"
-banner.color;
-banner['color']
+banner_color;
+top_banner.color;
+top_banner['color']
 
 const partipant_list = [];
 const participant = {}
 console.log(john);
 console.log("Participant Type:", typeof john);
 
-console.log(banner.color);
-console.log(banner['color']);
+console.log(top_banner.color);
+console.log(top_banner['color']);
 
 // let var const
-for (const index = 0; index < array.length; index++) {
-    const element = array[index];
-    
+for (let index = 0; index < available_examples.length; index++) {
+  const element = available_examples[index];
+  console.log("Example", index, ":", element);
 }
 const max_items = 100;
 let shopping_cart_items_count = 0;  //let  // var do not use
@@ -76,3 +77,20 @@ shopping_cart_items_count = 5;
 console.log("Max items allowed in cart: ", max_items);
 console.log("Current items in cart: ", shopping_cart_items_count);
 console.log("Value is fixed: ", valueisfixed);
+
+const Dileep = {
+    name: "Dileep",
+    age: 35,
+    email: "dileep@example.com"
+};
+console.log(Dileep);
+console.log("Dileep's name: ", Dileep.name);
+console.log("Dileep's age: ", Dileep.age);
+console.log("Dileep's email: ", Dileep.email);
+
+const maxage = 75;
+for (let age = Dileep.age; age < maxage; age++) {
+  //const element = available_examples[age];
+  console.log("His Name is " + Dileep.name + " and he is " + age + " years old");
+}
+

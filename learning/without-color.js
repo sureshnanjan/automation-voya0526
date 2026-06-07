@@ -1,15 +1,16 @@
 // Load the module
-//var color = require("ansi-color").set; // commonJS 
-import {color} from "ansi-color"; // ESModule
-//var colorval = color.set; 
+import pkg from "ansi-color";
+const { set } = pkg;
 
 // Print the word "Error" to stdout in red
-console.log(color("Error", "yellow"));
+console.log(set("Error", "yellow"));
 
 // Print the word "Error" in red and underlined
-console.log(color("Error", "red+blink"));
+console.log(set("Error", "red+blink"));
 
 // Print the word "Success" in bold green, followed by a message
-console.log(color("Success", "green+bold"), "This is to demo external Packages");
-console.log(color("Only One"))
-console.log(color("one","red", "third"))
+console.log(set("Success", "green+bold"), "This is to demo external Packages");
+
+
+// Print the word "Dileep" in bold yellow, followed by a message
+console.log(set("Dileep", "yellow+bold"), "This is the code added by Dileep");

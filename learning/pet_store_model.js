@@ -36,4 +36,5 @@ console.log([crow]);
 
 
 const tags = [{id: 1, name: "pet"}, {id: 2, name: "aquatic"}, {id: 3, name: "avian"},{id: 4, name: "wild"}, {id: 5, name: "mammal"}];
-console.log(tags);
+console.log("Tags : ",tags);
+console.log("Tag names: ", tags.map(tag => tag.name));

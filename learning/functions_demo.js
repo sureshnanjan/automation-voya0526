@@ -23,11 +23,11 @@ function customSort(array){
     return array.sort((a, b) => b.charAt(2).localeCompare(a.charAt(2)));
 }
 
-name = "John Doe";
-age = 30;
+const name = "John Doe";
+const age = 30;
 
 
-user = {fname: "john" ,lname:"Doe", age: 30, email: "john.doe@example.com"};
+const user = {fname: "john" ,lname:"Doe", age: 30, email: "john.doe@example.com"};
 function getNameofUser(user){
     // Capitalise the first letter of the name
     user.name = user.fname.charAt(0).toUpperCase() + user.fname.slice(1) + " " + user.lname.charAt(0).toUpperCase() + user.lname.slice(1);  

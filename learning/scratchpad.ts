@@ -17,9 +17,9 @@ listofNames.forEach(name => console.log(name + " has length " + name.length));
 //listofNames.forEach(NamedHello);
 
 
-function compute(callback){
+function compute(callback:(p1:number,p2:number)=>number){
 console.log("Starting computation...");
-callback();
+return callback(p1,p2);
 console.log("Computation completed.");
 }
 
@@ -39,6 +39,8 @@ function filterGT3(name:string){
 console.log(listofNames.filter(name => name.startsWith("A") || name.startsWith("B")))
 console.log(listofNames.filter(name => name.length > 3))
 console.log(listofNames.filter(name => name.endsWith("e")))
+
+listofNames.sort()
 
 console.log("USing named functions ")
 console.log(listofNames.filter(filterGT3));

@@ -23,3 +23,4 @@ jobs:
       - run: npm ci
       - run: npm run niranjan
       - run: npm run petstore
+      - run: npm run petstoretypes

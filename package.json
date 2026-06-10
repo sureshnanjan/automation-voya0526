@@ -2,12 +2,19 @@
   "name": "automation-voya0526",
   "version": "1.0.0",
   "description": "Automation tests for Voya project",
+  "type": "commonjs",
   "scripts": {
     "niranjan": "node learning/without-color.js",
-    "petstore": "node learning/pet_store_model.js"
-  },
+    "petstore": "node learning/pet_store_model.js",
+    "petstoretypes": "tsx learning/petstore_types.ts"
 
+  },
   "devDependencies": {
+    "@types/node": "^25.9.1",
     "ansi-color": "^0.2.2"
+  },
+  "dependencies": {
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
   }
 }

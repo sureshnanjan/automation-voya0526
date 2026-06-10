@@ -14,8 +14,4 @@ name: "angel_fish",
 photoUrls:	["fish1.jpg", "fish2.jpg    "],
 tags:["pet", "aquatic"],
 status: "available"}
-
-const AmazonParrot = {id: 101, category: birds_category, 
-    name: "amazon_parrot", photoUrls: ["bird1.jpg", "bird2.jpg"],
-     tags: ["pet", "exotic"], status: "available"};
-console.log(AmazonParrot);
+console.log(Angelfish);

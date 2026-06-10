@@ -1,5 +1,7 @@
 // Load the module
-var color = require("ansi-color").set;
+//var color = require("ansi-color").set; // commonJS 
+import {color} from "ansi-color"; // ESModule
+//var colorval = color.set; 
 
 // Print the word "Error" to stdout in red
 console.log(color("Error", "yellow"));

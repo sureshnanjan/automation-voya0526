@@ -1,8 +1,13 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
+<<<<<<< Updated upstream
     // File Layout ../learning
     "rootDir": "./learning",
+=======
+    // File Layout
+    "rootDir": ".",
+>>>>>>> Stashed changes
     "outDir": "./dist",
 
     // Environment Settings

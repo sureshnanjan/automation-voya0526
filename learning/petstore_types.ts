@@ -1,20 +1,27 @@
-type ApiResponse = {
+/**
+ * Defines the structure for API responses, including success and failure cases.
+ * code represents the HTTP status code
+ * Reason is the message
+ * type represents the type of the response.
+ */
+export type ApiResponse = {
     code: number;
     type: string;
     message: string;
     
 }
-type custom1 {
+
+export type custom1 ={
     attrib1: string;
 }
-type custom2 {
+type custom2 = {
     attrib2: number;
 }
 type customUnion = custom1 | custom2;
 type customIntersection = custom1 & custom2;
 
 const mycustomValue1: customUnion = {attrib2: 42, attrib1: "Hello"};
-const customInterValue: customIntersection = {attrib1: "Hello"};
+//const customInterValue: customIntersection = {attrib1: "Hello"};
 
 type myType = string | number | boolean| {myattrib: string};
  
@@ -31,3 +38,71 @@ const myname: string = "John Doe";
  const tsresponse_success: ApiResponse = {code: 200, type: "success", message: "successful operation"};
  const tsresponse_failure: ApiResponse = {code: 400, type: "failure", message: "operation failed"};
  console.log(tsresponse_success)
+
+ type Pet =  {
+    name:string
+    id:number
+ }
+
+function comparePetsasperName(param1:Pet, param2:Pet):number{
+    // This should compare param1 and 2
+    if (param1.name === param2.name)
+        return 0;
+    else{
+        if (param1.name > param2.name)
+            return 1;
+        else
+            return -1;
+    }
+
+}
+const val = 10;
+//Number
+
+const mypets:Pet[] = [{name:"dog",id:1},{name:"cat",id:2},{name:"reptile",id:3}]
+console.log(mypets)
+console.log("After Sorting by Name")
+console.log(mypets.sort(comparePetsasperName))
+console.log("After Sorting by ID")
+console.log(mypets.sort( (param1,param2) => {return param1.id - param2.id}));
+console.log("After Sorting by ID Descending")
+console.log(mypets.sort( (param1,param2) => {return param2.id - param1.id}));
+
+//const compareFn: string | number = "100"
+const mystring:string = ""
+const mynum:number = 100
+
+let numorstr: string|number = 100
+numorstr = ""
+numorstr = {}
+
+function numberCompare(p1:number,p2:number):number{
+    return 0;
+}
+
+let compareFn: ((suresh1:number,suresh2:number)=>number) | undefined = undefined
+compareFn = (param1:number,param2:number) => {return param2 - param1} 
+compareFn = numberCompare
+//compareFn = comparePetsasperName
+
+//TODO:
+// Create a collection of API Response 
+const myresponses:ApiResponse[] = []
+
+// Filter out all the Responses with code 100
+
+// Filter out all the responses with message  "success" case insensitive
+
+// Sort the response collection as per type
+
+// For every response add the string "PROCESSED" to the message attribute
+
+const sample:ApiResponse = {code:100,type:"Server",message:"Successfly Created: PROCESSED"}
+
+function addCookies(param:{}[]){
+    //doSomething
+}
+
+addCookies([{},{}])
+
+

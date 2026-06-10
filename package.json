@@ -2,7 +2,7 @@
   "name": "automation-voya0526",
   "version": "1.0.0",
   "description": "Automation tests for Voya project",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "soundarya": "node learning/without-color.js",
     "petstore": "node learning/pet_store_model.js"

@@ -85,10 +85,13 @@ compareFn = (param1:number,param2:number) => {return param2 - param1}
 compareFn = numberCompare
 //compareFn = comparePetsasperName
 
+const nums = [1,2,3]
+const result = nums.copyWithin(2,1,2)
+console.log(result)
+
 //TODO:
 // Create a collection of API Response 
 const myresponses:ApiResponse[] = []
-
 // Filter out all the Responses with code 100
 
 // Filter out all the responses with message  "success" case insensitive

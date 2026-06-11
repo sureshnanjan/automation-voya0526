@@ -87,15 +87,31 @@ compareFn = numberCompare
 
 //TODO:
 // Create a collection of API Response 
-const myresponses:ApiResponse[] = []
-
+const myresponses: ApiResponse[] = [
+    { code: 100, type: "Server", message: "Successful operation" },
+    { code: 200, type: "success", message: "Operation succeeded" },
+    { code: 404, type: "failure", message: "Operation failed" },
+    { code: 100, type: "info", message: "Success message" },
+    { code: 201, type: "success", message: "Resource created successfully" },
+]
 // Filter out all the Responses with code 100
+const responsesWithout100 = myresponses.filter(response => response.code === 100)
 
-// Filter out all the responses with message  "success" case insensitive
+// Filter out all the responses with message "success" case insensitive
+const successMessageResponses = myresponses.filter
+(response =>response.message.toLowerCase().includes("success")
+)
 
 // Sort the response collection as per type
+const responsesSortedByType = [...myresponses].sort((a, b) =>
+    a.type.localeCompare(b.type)
+)
 
 // For every response add the string "PROCESSED" to the message attribute
+const processedResponses: ApiResponse[] = myresponses.map(response => ({
+    ...response,
+    message: `${response.message} PROCESSED`,
+}))
 
 const sample:ApiResponse = {code:100,type:"Server",message:"Successfly Created: PROCESSED"}
 

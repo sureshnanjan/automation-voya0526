@@ -14,3 +14,4 @@ console.log(color("Success", "green+bold"), "This is to demo external Packages")
 console.log(color("Prince", "yellow"), "My self prince");
 console.log(color("Only One"))
 console.log(color("one","red", "third"))
+>>>>>>> 69d536661f952895748bee02367f8090397aa276

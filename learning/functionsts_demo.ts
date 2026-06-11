@@ -27,7 +27,7 @@ const namests: string[] = ["Alice", "Bob", "Charlie", "David", "Eve"];
 console.log(customSortTS(namests));
 console.log(mymarks); 
 
-// Map-based transformations (no classes)
+// Map-based transformations
 function doubleNumbers(arr: number[]): number[] {
     return arr.map(n => n * 2);
 }

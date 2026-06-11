@@ -94,7 +94,6 @@ const myresponses: ApiResponse[] = [
     { code: 100, type: "info", message: "Success message" },
     { code: 201, type: "success", message: "Resource created successfully" },
 ]
-
 // Filter out all the Responses with code 100
 const responsesWithout100 = myresponses.filter(response => response.code === 100)
 

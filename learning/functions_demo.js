@@ -9,7 +9,7 @@ function displayHomePage(){
     showContent();
     buyPet();
 }
-
+const arrayAdd = (INP1,INP2) => {}
 // Inputs - Process - Output
 function addTwoNumbers(num1, num2){
     const result = num1 + num2;

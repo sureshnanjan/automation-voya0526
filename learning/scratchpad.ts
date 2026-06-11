@@ -1,3 +1,4 @@
+import type { ApiResponse } from "./petstore_types.js";
 const printHello = function(value) {
     console.log("Hello Anonymous " + value);
 }
@@ -35,7 +36,7 @@ function StartswithAorB(name:string){
 function filterGT3(name:string){
     return name.length > 3
 }
-
+/*
 console.log(listofNames.filter(name => name.startsWith("A") || name.startsWith("B")))
 console.log(listofNames.filter(name => name.length > 3))
 console.log(listofNames.filter(name => name.endsWith("e")))
@@ -50,3 +51,56 @@ listofNames.map()
 // Get a list of numbers doubled
 // Get a list of numbers + 2
 // Get a list of numbers power2 ^2
+*/
+const nums = [1,2,3,4,5,6,7,8,9,10]
+console.log("Before Copy Within")
+console.log(nums)
+const result = nums.copyWithin(0,6)
+
+console.log("After Copy Within")
+console.log(result)
+console.log(nums)
+const mapped = nums.map(response => ({
+    //...response,
+    message: `${response} PROCESSED`,
+}));
+
+// {
+   // ...response,
+  //  message: `${response.message} PROCESSED`,
+//})
+console.log("After Mapping ")
+console.log(nums)
+console.log(mapped)
+
+const myObject = {attr1:1, attr2:"Two", attr3:true}
+console.log(myObject)
+//console.log(...myObject)
+const myresponses: ApiResponse[] = [
+    { code: 100, type: "Server", message: "Successful operation PROCESSED" },
+    { code: 200, type: "success", message: "Operation succeeded PRO" },
+    { code: 404, type: "failure", message: "Operation failed" },
+    { code: 100, type: "info", message: "Success message" },
+    { code: 201, type: "success", message: "Resource created successfully" },
+]
+
+//myresponses.filter
+//TODO:
+// Create a collection of API Response 
+// const myresponses:ApiResponse[] = []
+// Filter out all the Responses with code 100
+myresponses.filter()
+// Filter out all the responses with message  "success" case insensitive
+myresponses.filter()
+// Sort the response collection as per type
+myresponses.sort()
+// For every response add the string "PROCESSED" to the message attribute
+myresponses.at
+myresponses.map(element => {
+    // take the element id
+    // Male aa API CALL TO GET MOTRE DETAILS
+    // UPDATE THE DATA BSER RELATED TO THIS ELEMENT
+    // SEND SMS 
+
+})
+//myresponses.forEach

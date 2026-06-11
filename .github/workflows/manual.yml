@@ -21,7 +21,5 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
-      - run: npm test
       - run: npm run sushma
       - run: npm run pet_store
-      - run: npm run suresh

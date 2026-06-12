@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 console.log("Home page tests initialized");
 console.log("Running home page tests...");
 // Example test case for the home page
@@ -10,4 +8,5 @@ console.log("Some Tests failed - check the logs for details");
 console.log("Prince- check the logs for details");
 const myvalue = "Hello, World!";
 console.log(myvalue);
+export {};
 //# sourceMappingURL=home_page_tests.js.map

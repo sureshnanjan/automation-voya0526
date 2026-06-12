@@ -11,17 +11,11 @@ const reptile_category = {id:4,name:"Reptiles"};
 const bird_category = {id:5,name:"Birds"};
 
 
-fish_category.name;
-fish_category.notexisting; // undefined
-
 const Angelfish = {id: 100,category	:fish_category,
 name: "angel_fish",
 photoUrls:	["fish1.jpg", "fish2.jpg    "],
 tags:["pet", "aquatic"],
 status: "available"}
-<<<<<<< HEAD
-console.log(Angelfish);
-=======
 
 const GoldenRetriever = {id: 101,category	:dog_category,
 name: "golden_retriever",
@@ -52,4 +46,3 @@ console.log(Iguna);
 console.log(PersianCat);
 console.log(GoldenRetriever);
 console.log(Angelfish); 
->>>>>>> e583810 (added pet store changes)

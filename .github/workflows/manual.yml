@@ -21,4 +21,12 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
+<<<<<<< HEAD
+<<<<<<< HEAD
+      - run: npm run rahul
+      - run: npm run petStore
+=======
+      - run: npm run rahul
+>>>>>>> b1ce013 (changed name in package.json and manual.yml file)
+=======
       - run: npm run rahul

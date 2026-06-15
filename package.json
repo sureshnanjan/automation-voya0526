@@ -3,10 +3,16 @@
   "version": "1.0.0",
   "description": "Automation tests for Voya project",
   "scripts": {
-    "suresh": "node learning/without-color.js"
+    "start": "node learning/without-color.js",
+    "build": "tsc",
+    "test": "npm run build && node dist/home_page_tests.js",
+    "demo": "node learning/without-color.js"
   },
 
   "devDependencies": {
-    "ansi-color": "^0.2.2"
+    "ansi-color": "^0.2.2",
+    "@types/node": "^20.14.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.5.4"
   }
 }

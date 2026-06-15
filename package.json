@@ -2,13 +2,13 @@
   "name": "automation-voya0526",
   "version": "1.0.0",
   "description": "Automation tests for Voya project",
+  "type": "module",
   "scripts": {
     "start": "node learning/without-color.js",
     "build": "tsc",
     "test": "npm run build && node dist/home_page_tests.js",
     "demo": "node learning/without-color.js"
   },
-
   "devDependencies": {
     "ansi-color": "^0.2.2",
     "@types/node": "^20.14.2",

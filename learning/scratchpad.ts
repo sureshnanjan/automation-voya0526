@@ -47,6 +47,16 @@ console.log(listofNames.filter(filterGT3));
 console.log(listofNames.filter(StartswithAorB));
 
 listofNames.map() 
+    const listOfNumbers = [1, 2, 3, 4, 5];
 // Get a list of numbers doubled
+
+const doubled = listOfNumbers.map(num => num * 2);
+console.log(doubled)
+
 // Get a list of numbers + 2
+const addedTwo = listOfNumbers.map(num => num + 2);
+console.log(addedTwo)
+
 // Get a list of numbers power2 ^2
+const squared = listOfNumbers.map(num => num ** 2);
+console.log(squared)

@@ -89,15 +89,36 @@ compareFn = numberCompare
 // Create a collection of API Response 
 const myresponses:ApiResponse[] = []
 
+myresponses.push(
+  { code: 100, type: "Server", message: "Successfly Created" },
+  { code: 200, type: "Client", message: "Success" },
+  { code: 300, type: "Server", message: "Failed" },
+  { code: 400, type: "Client", message: "success" },
+  { code: 100, type: "Server", message: "Duplicate" }
+);
+
+
 // Filter out all the Responses with code 100
+const noCode100 = myresponses.filter(res => res.code !== 100);
 
 // Filter out all the responses with message  "success" case insensitive
+const successResponses = myresponses.filter(res => res.message.toLowerCase() === "success");
 
 // Sort the response collection as per type
+
+const sortedByType = [...myresponses].sort((a, b) =>
+  a.type.localeCompare(b.type)
+);
 
 // For every response add the string "PROCESSED" to the message attribute
 
 const sample:ApiResponse = {code:100,type:"Server",message:"Successfly Created: PROCESSED"}
+
+const processedResponses = myresponses.map(res => ({
+  ...res,
+  message: `${res.message}: PROCESSED`
+}));
+
 
 function addCookies(param:{}[]){
     //doSomething

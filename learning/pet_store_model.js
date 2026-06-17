@@ -7,6 +7,8 @@ const failure = {code: 200, type: "success", message: "successful operation",not
 const fish_category = {id:1,name:"fish"};
 const dog_category = {id:2,name:"dog"};
 const cat_category = {id:3,name:"cat"};
+const bird_category = {id:4,name:"bird"};
+
 
 fish_category.name;
 fish_category.notexisting; // undefined
@@ -16,4 +18,7 @@ name: "angel_fish",
 photoUrls:	["fish1.jpg", "fish2.jpg    "],
 tags:["pet", "aquatic"],
 status: "available"}
-console.log(Angelfish);
+console.log("Hello");
+
+const finch={id:120,category:bird_category,name:"finch",status:"Available",photoUrls:["bird1.jpg","bird2.jpg"],tags:["pet","exotic"],status:"available"}
+console.log(finch);

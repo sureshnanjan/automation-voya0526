@@ -6,7 +6,7 @@ test('Heroku Page has correct title', async ({ page }) => {
 });
 test('Heroku Page has Main Heading Correct', async ({ page }) => {
   await page.goto('https://the-internet.herokuapp.com/');
-  await expect(page.locator('h1')).toContainText('Welcome to the-internet');
+  await expect(page.locator('h1')).toContainText('Welcome to the-internet1');
 });
 test('Heroku Page has Sub Heading Correct', async ({ page }) => {
   await page.goto('https://the-internet.herokuapp.com/');

@@ -1,3 +1,4 @@
+/*
 function addNumbers(inp1, inp2){
     console.log("Adding 2 numbers :" + inp1 +" and " + inp2 )
     return inp1 + inp2
@@ -51,3 +52,50 @@ console.log("Starting")
 console.log("Processing")
 console.log(addNumbers(10,20))
 console.log("Finish")
+// Sync
+function myfunc():string{
+    return "100"
+}
+*/
+// Synchronous
+function add2Nums(p1:number,p2:number){
+    
+    return p1+p2;
+}
+async function(){
+    await 
+}
+const promiseRetunsString = new Promise<string>(resolve=>{
+        resolve("You are suresh doing automation")
+});
+const promisReturnNumber = new Promise<number>(resolve=>{
+    resolve(1)
+})
+const promiseReturnCustom = new Promise<{status:string,code?:number}>(resolve=>{
+    resolve({status:"OK",code:1});
+});
+
+const result = add2Nums(100,200)
+const myPromise100 = promiseRetunsString;
+const promiseNumberResult = promisReturnNumber;
+
+function processResult(result){
+    console.log("This is the result I have from Promise")
+    console.log(result)
+}
+// Handling Promises in Callback 
+console.log(result);
+//myPromise100.then(result=>{
+//});
+//promiseNumberResult.then(processResult)
+// Async Await 
+(async() =>{
+    const result100 = await myPromise100;
+    const result1 = await promiseNumberResult
+    console.log(result100)
+    console.log(result1)
+})();
+
+
+
+

@@ -5,7 +5,7 @@ export type LogoDetail= {
 }
 export interface HomePageOperation{
     //Title:Promise<string>
-    getTitle():Promise<string>;
+    getTitle():Promise<string|null>;
     getSubTitle():Promise<string>;
     getLogoDetail():Promise<LogoDetail>
     getAvailableExamples():Promise<string[]>

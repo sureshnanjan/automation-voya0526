@@ -2,14 +2,11 @@
 // https://petstore.swagger.io/
 
 const api_success = {code: 200, type: "success", message: "successful operation"};
-<<<<<<< HEAD
 const failure = {code: 200, type: "success", message: "successful operation",notvalid: "This is not a valid attribute"};
-=======
 console.log(api_success);
 
 const api_failure={code: 400,type: "Failure",Message: " Internal server error"} 
 console.log(api_failure);
->>>>>>> 340d9d2 (pet store changes updated)
 
 const fish_category = {id:1,name:"fish"};
 const dog_category = {id:2,name:"dog"};
@@ -18,7 +15,6 @@ const Bird_category ={id:4,name: "Bird"};
 const Reptiles_category={id:5, name: "Reptiles"}
 const OrderStatus={id:100,status: "Available"}
 
-<<<<<<< HEAD
 fish_category.name;
 fish_category.notexisting; // undefined
 
@@ -28,7 +24,6 @@ photoUrls:	["fish1.jpg", "fish2.jpg    "],
 tags:["pet", "aquatic"],
 status: "available"}
 console.log(Angelfish);
-=======
 const dog = {id: 100,category:dog_category,
 name: "Bulldog",
 photoUrls:	["Dog1.jpg", "dog2.jpg "],
@@ -49,4 +44,3 @@ status: "Available"
 ,OrderStatus : "Success"
 }
 console.log(order);
->>>>>>> 340d9d2 (pet store changes updated)

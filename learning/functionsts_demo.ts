@@ -35,7 +35,7 @@ const myvalue: string = "Hello, World!";
 const mybehaviur = function(param1: string,param2:number): void {
     console.log("This is a function without return value");
 }
-mybehaviur();
+mybehaviur("test", 100);
 
 const myarrwo = () => console.log("This is an arrow function without return value");
 
@@ -43,11 +43,12 @@ const mmyarrowfunction = (): void => {
     console.log("This is an arrow function without return value");
 }
 
+/*
 function processResponse(response: ApiResponse): void {
     if (response.code === 200) {
         console.log("Success:", response.message);
     } else {
         console.log("Error:", response.message);
-    }  }
+    }
+}
 */
-    

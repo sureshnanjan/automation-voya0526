@@ -1,12 +1,12 @@
-const myItems:Array<string>= [100,200]
+const myItems:Array<string>= ["100","200"]
 const myNumbers:Array<number> = [100,200,300]
 
 type  myType<T1,T2> = {
-    att1:suresh,
-    attr2:suresh1,
+    att1:T1,
+    attr2:T2,
 }
 
-const myTypeItems:Array<myType> =[{att1:"",attr2:100}]
+const myTypeItems:Array<myType<string,number>> =[{att1:"",attr2:100}]
 
 type Stack = {
     items:number[]
@@ -18,14 +18,14 @@ type MyGenricStack<T1,T2> = {
     items2:T2
 }
 
-Array<string>
-Array<number>
-Array<myType>
+// Array<string>
+// Array<number>
+// Array<myType>
 
 
 const mynums = [1,2,3,4]
 const mynames = ["one", "two"]
-const mycustom:myType[] = [{att1:"",attr2:0},{att1:"two",attr2:1},{att1:"three",attr2:3}]
+const mycustom:myType<string,number>[] = [{att1:"",attr2:0},{att1:"two",attr2:1},{att1:"three",attr2:3}]
 
 mynums.at(0)
 mynames.at(0)
@@ -34,7 +34,7 @@ mycustom.at(0)
 
 mycustom.at
 const mystack:MyGenricStack<number,boolean> = {items:[1,2,3,4,5],items2:true}
-const mystringStack:MyGenricStack<string,myType> = {items:["One","Two"],items2:{att1:"",attr2:100}}
+const mystringStack:MyGenricStack<string,myType<string,number>> = {items:["One","Two"],items2:{att1:"",attr2:100}}
 //const myItemsStack:MyGenricStack<myType> ={items:[{att1:"",attr2:100}]}
 
 function add(p1:number,p2:number):number{
@@ -47,7 +47,7 @@ function genericAdd<T>(p1:T,p2:T):T{
 
 genericAdd<string>("","");
 genericAdd<number>(1,2)
-genericAdd<myType>({att1:"One",attr2:1},{att1:"two",attr2:2})
+genericAdd<myType<string,number>>({att1:"One",attr2:1},{att1:"two",attr2:2})
 
 
 

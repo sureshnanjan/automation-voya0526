@@ -11,7 +11,7 @@
     "target": "esnext",
     //"types": [],
     // For nodejs:
-     "lib": ["esnext"],
+     "lib": ["esnext", "dom"],
      "types": ["node"],
     // and npm install -D @types/node
 
@@ -40,5 +40,6 @@
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
-  }
+  },
+  "exclude": ["src/**", "node_modules/**"]
 }

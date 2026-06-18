@@ -1,4 +1,7 @@
+
 import { test, expect } from '@playwright/test';
+import type { ContextMenuOperations } from '../operations/context_menu_operations.js';
+import { ContextMenuPage } from '../implementation/context_menu_page.js';
 test('Heroku Page has correct title', async ({ page }) => {
   await page.goto('https://the-internet.herokuapp.com/');
   // Expect a title "to contain" a substring.
@@ -63,6 +66,30 @@ test('Buying Angel fish works OK', async ({ page }) => {
   await page.getByRole('button', { name: 'Continue' }).click();
   await page.getByText('Order').click();
   await expect(page.getByRole('rowgroup')).toContainText('Order');
+});
+
+function HandlerForDialogBox(dialog){
+    console.log(dialog)
+}
+test("Context Menu Shows Me correct Data",async ({page})=>{
+  page.on("dialog",async (dialog)=>{
+    console.log(dialog.message());
+    console.log(dialog.type())
+    console.log(await dialog.accept())
+  });
+  await page.goto("https://the-internet.herokuapp.com/context_menu");
+  //await page.locator("#hot-spot").click({button:"right"}) // left click
+  await page.locator('#hot-spot').click({
+    button: 'right'
+  });
+});
+
+test("Context Menu Shows Me correct Data with PO",async ({page})=>{
+  const expected = "You selected a context menu";
+  const ctxpage:ContextMenuOperations = new ContextMenuPage(page);
+  await ctxpage.invokeContextMenu()
+  const result = await ctxpage.getContextMenuMessage();
+  expect(result).toEqual(expected);
 });
 
 

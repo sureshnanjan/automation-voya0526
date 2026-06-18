@@ -15,3 +15,19 @@ test("Heroku Title Check with PO", async ({page})=>{
     const actual_title = await hp.getTitle();
     await expect(actual_title).toEqual(expected_title)
 })
+test("Subtitle Check works OK",async ({page})=>{
+    const hp:HomePageOperation = new HomePage(page)
+   // const hp:HomePageOperation = new HomePageWDIO();
+    const expected_sub_title = "Available Examples";
+    const actual_sub_title = await hp.getSubTitle();
+    await expect(actual_sub_title).toEqual(expected_sub_title)
+});
+test("Available Examples Count is 44",async ({page})=>{
+    const hp:HomePageOperation = new HomePage(page)
+   // const hp:HomePageOperation = new HomePageWDIO();
+    const expected_example_count = 44;
+    const available_examples = await hp.getAvailableExamples();
+    console.log(available_examples);
+    const actual_example_count = available_examples.length;
+    await expect(actual_example_count).toEqual(expected_example_count)
+});

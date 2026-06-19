@@ -48,10 +48,21 @@ console.log(listofNames.filter(filterGT3));
 console.log(listofNames.filter(StartswithAorB));
 
 listofNames.map() 
-// Get a list of numbers doubled
-// Get a list of numbers + 2
-// Get a list of numbers power2 ^2
 */
+const listOfNumbers = [1, 2, 3, 4, 5];
+// Get a list of numbers doubled
+
+const doubled = listOfNumbers.map(num => num * 2);
+console.log(doubled)
+
+// Get a list of numbers + 2
+const addedTwo = listOfNumbers.map(num => num + 2);
+console.log(addedTwo)
+
+// Get a list of numbers power2 ^2
+const squared = listOfNumbers.map(num => num ** 2);
+console.log(squared)
+
 const nums = [1,2,3,4,5,6,7,8,9,10]
 console.log("Before Copy Within")
 console.log(nums)

@@ -9,7 +9,6 @@ const dog_category = {id:2,name:"dog"};
 const cat_category = {id:3,name:"cat"};
 const bird_category = {id:4,name:"bird"};
 
-
 fish_category.name;
 fish_category.notexisting; // undefined
 

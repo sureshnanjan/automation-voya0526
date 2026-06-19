@@ -4,8 +4,7 @@
   "description": "Automation tests for Voya project",
   "type": "module",
   "scripts": {
-    "suresh": "node learning/without-color.js",
-    "aditya": "node learning/without-color.js",
+    "suresh": "node learning/without-color.js",\r\n    "aditya": "node learning/without-color.js",
     "finch": "node learning/pet_store_model.js"
   },
 
@@ -19,3 +18,4 @@
     "typescript": "^6.0.3"
   }
 }
+

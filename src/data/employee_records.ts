@@ -14,3 +14,5 @@ export const employee_data =  [[
   new Employee("john3","Smith","jsmith@gmail.com",50.00,['edit', 'delete']),
   new Employee("john3","Smith","jsmith@gmail.com",50.00,['edit', 'delete']),
   new Employee("john3","Smith","jsmith@gmail.com",50.00,['edit', 'delete'])]]
+
+  //const empl_fdata = fetchDataFromDB()// CSV // json // APICALL

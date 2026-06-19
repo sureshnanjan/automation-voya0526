@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import type { HomePageOperation } from "../operations/home_page_opertions.js";
+import type { HomePageOperation } from "../operations/home_page_operations.js";
 import { HomePage } from '../implementation/home_page.js';
 import { HomePageWDIO } from '../implementation/home_page_WDIO.js';
 
@@ -14,7 +14,7 @@ test("Heroku Title Check with PO", async ({page})=>{
     const expected_title = "Welcome to the-internet1";
     const actual_title = await hp.getTitle();
     await expect(actual_title).toEqual(expected_title)
-})
+});
 test("Subtitle Check works OK",async ({page})=>{
     const hp:HomePageOperation = new HomePage(page)
    // const hp:HomePageOperation = new HomePageWDIO();

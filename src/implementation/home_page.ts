@@ -1,4 +1,4 @@
-import type { HomePageOperation,  LogoDetail } from "../operations/home_page_opertions.js";
+import type { HomePageOperation,  LogoDetail } from "../operations/home_page_operations.js";
 import type { Locator, Page } from "@playwright/test";
 export class HomePage implements HomePageOperation{
     private title_locator:Locator;

@@ -1,7 +1,7 @@
-
 import { test, expect } from '@playwright/test';
 import type { ContextMenuOperations } from '../operations/context_menu_operations.js';
 import { ContextMenuPage } from '../implementation/context_menu_page.js';
+import { Employee } from '../data/employee_data.js';
 test('Heroku Page has correct title', async ({ page }) => {
   await page.goto('https://the-internet.herokuapp.com/');
   // Expect a title "to contain" a substring.
@@ -90,7 +90,7 @@ test("Context Menu Shows Me correct Data with PO",async ({page})=>{
   await ctxpage.invokeContextMenu()
   const result = await ctxpage.getContextMenuMessage();
   expect(result).toEqual(expected);
-  browser.
+  //browser.
 });
 test("Test Title",async ({page,browser,context,browserName,request})=>{
   await page.goto("");
@@ -99,10 +99,10 @@ test("Test Title",async ({page,browser,context,browserName,request})=>{
 
 test("Sortable Data is working correct with correct default records",async ({page})=>{
   const expected = [
-  new Employee("john","Smith","jsmith@gmail.com",$50.00,['edit', 'delete']),
-  new Employee("john","Smith","jsmith@gmail.com",$50.00,['edit', 'delete']),
-  new Employee("john","Smith","jsmith@gmail.com",$50.00,['edit', 'delete']),
-  new Employee("john","Smith","jsmith@gmail.com",$50.00,['edit', 'delete'])]
+  new Employee("john","Smith","jsmith@gmail.com",50.00,['edit', 'delete']),
+  new Employee("john","Smith","jsmith@gmail.com",50.00,['edit', 'delete']),
+  new Employee("john","Smith","jsmith@gmail.com",50.00,['edit', 'delete']),
+  new Employee("john","Smith","jsmith@gmail.com",50.00,['edit', 'delete'])]
   /*
   Smith	John	jsmith@gmail.com	$50.00	http://www.jsmith.com	edit delete
 Bach	Frank	fbach@yahoo.com	$51.00	http://www.frank.com	edit delete
@@ -110,7 +110,7 @@ Doe	Jason	jdoe@hotmail.com	$100.00	http://www.jdoe.com	edit delete
 Conway	Tim	tconway@earthlink.net	$50.00	http://www.timconway.com	edit delete
   */
  
- const actual_result = PO.getTable() 
+ //const actual_result = PO.getTable() 
 })
 
 

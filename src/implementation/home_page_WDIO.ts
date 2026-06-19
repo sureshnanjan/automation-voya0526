@@ -1,4 +1,4 @@
-import type { HomePageOperation, LogoDetail } from "../operations/home_page_opertions.js";
+import type { HomePageOperation, LogoDetail } from "../operations/home_page_operations.js";
 
 export class HomePageWDIO implements HomePageOperation{
     getTitle(): Promise<string | null> {

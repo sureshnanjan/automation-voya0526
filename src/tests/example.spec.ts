@@ -77,7 +77,7 @@ test("Context Menu Shows Me correct Data",async ({page})=>{
     console.log(dialog.type())
     console.log(await dialog.accept())
   });
-  await page.goto("https://the-internet.herokuapp.com/context_menu");
+  await page.goto("/context_menu");
   //await page.locator("#hot-spot").click({button:"right"}) // left click
   await page.locator('#hot-spot').click({
     button: 'right'
@@ -90,7 +90,27 @@ test("Context Menu Shows Me correct Data with PO",async ({page})=>{
   await ctxpage.invokeContextMenu()
   const result = await ctxpage.getContextMenuMessage();
   expect(result).toEqual(expected);
+  browser.
+});
+test("Test Title",async ({page,browser,context,browserName,request})=>{
+  await page.goto("");
+  //browser.
 });
 
+test("Sortable Data is working correct with correct default records",async ({page})=>{
+  const expected = [
+  new Employee("john","Smith","jsmith@gmail.com",$50.00,['edit', 'delete']),
+  new Employee("john","Smith","jsmith@gmail.com",$50.00,['edit', 'delete']),
+  new Employee("john","Smith","jsmith@gmail.com",$50.00,['edit', 'delete']),
+  new Employee("john","Smith","jsmith@gmail.com",$50.00,['edit', 'delete'])]
+  /*
+  Smith	John	jsmith@gmail.com	$50.00	http://www.jsmith.com	edit delete
+Bach	Frank	fbach@yahoo.com	$51.00	http://www.frank.com	edit delete
+Doe	Jason	jdoe@hotmail.com	$100.00	http://www.jdoe.com	edit delete
+Conway	Tim	tconway@earthlink.net	$50.00	http://www.timconway.com	edit delete
+  */
+ 
+ const actual_result = PO.getTable() 
+})
 
 

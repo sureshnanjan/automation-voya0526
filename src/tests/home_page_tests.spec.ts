@@ -31,3 +31,7 @@ test("Available Examples Count is 44",async ({page})=>{
     const actual_example_count = available_examples.length;
     await expect(actual_example_count).toEqual(expected_example_count)
 });
+
+test("Some Title",async ({page,browser,browserName,request})=>{
+    
+});

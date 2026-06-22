@@ -13,11 +13,11 @@ export class HomePage implements HomePageOperation{
         this.page.goto('https://the-internet.herokuapp.com/');
      }
 
-    getTitle(): Promise<string|null> {
+    async getTitle(): Promise<string|null> {
         return this.title_locator.textContent();
     }
-    getSubTitle(): Promise<string> {
-        throw new Error("Method not implemented.");
+    async getSubTitle(): Promise<string> {
+        return (await this.page.locator('h2').textContent()) ?? "";
     }
     getLogoDetail(): Promise<LogoDetail> {
         throw new Error("Method not implemented.");

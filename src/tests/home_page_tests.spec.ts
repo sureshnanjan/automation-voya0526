@@ -15,3 +15,10 @@ test("Heroku Title Check with PO", async ({page})=>{
     const actual_title = await hp.getTitle();
     await expect(actual_title).toEqual(expected_title)
 })
+
+test("Heroku Subtitle", async ({page})=>{
+    const hp:HomePageOperation = new HomePage(page)
+    const expected_subtitle = "Available Examples";
+    const actual_subtitle = await hp.getSubTitle();
+    await expect(actual_subtitle).toEqual(expected_subtitle)
+})

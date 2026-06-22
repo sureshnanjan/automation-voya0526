@@ -7,8 +7,9 @@ test("There are 2 Examples",async ({page,employee_data})=>{
     const actual_tables = (await dtpage.getAvailabeTables()).length
     expect(actual_tables).toEqual(expected_count)
 });
-test("Table 1 has correct colums",async ({page,employee_data})=>{
+test("Table 1 has correct colums",async ({page,employee_data,data_class})=>{
     //console.log(employee_data)
+    const expected = data_class.getRowData(1,1)
 });
 test("Table 1 has correct number of colums",async ({page,employee_data})=>{
     //console.log(employee_data)

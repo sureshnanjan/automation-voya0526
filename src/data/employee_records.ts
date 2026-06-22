@@ -16,3 +16,14 @@ export const employee_data =  [[
   new Employee("john3","Smith","jsmith@gmail.com",50.00,['edit', 'delete'])]]
 
   //const empl_fdata = fetchDataFromDB()// CSV // json // APICALL
+
+export class EmployeeData{
+  private _data:Employee[][];
+  constructor(input:Employee[][]){
+    this._data = input;
+
+  }
+  
+  getAllRows(){}
+  getRowData(table:number, rownum:number){}
+}

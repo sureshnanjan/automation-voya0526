@@ -12,6 +12,7 @@
     "ansi-color": "^0.2.2"
   },
   "dependencies": {
+    "load-json-file": "^7.0.1",
     "tsx": "^4.22.4",
     "typescript": "^6.0.3"
   }

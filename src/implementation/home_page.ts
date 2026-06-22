@@ -8,7 +8,7 @@ export class HomePage implements HomePageOperation{
 
     private constructor(page:Page){
         this.page = page;
-        this.title_locator = page.locator('heading').filter().first();
+        this.title_locator = page.getByRole('heading').filter().first();
         this.sub_title_locator = page.locator('h2');
         this.example_locator = page.getByRole("listitem").getByRole("link");
         //this.goToHome();

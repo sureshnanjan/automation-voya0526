@@ -8,6 +8,7 @@ test('Heroku Page has Main Heading Correct', async ({ page }) => {
 });
 
 test("Heroku Title Check with PO", async ({page})=>{
+    //const hompage = new HomePage(page)
     const hp = await HomePage.Create(page)
    // const hp = new HomePageWDIO();
     const expected_title = "Welcome to the-internet1";

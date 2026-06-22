@@ -1,4 +1,4 @@
-import {test,expect} from '../fixtures/employee_data_fixture.js';
+import {test,expect} from '../fixtures/employee_data_fixture';
 import type { DataTableOperations } from '../operations/data_table_operations.js';
 test("There are 2 Examples",async ({page,employee_data})=>{
     //console.log(employee_data)
@@ -12,7 +12,7 @@ test("Table 1 has correct colums",async ({page,employee_data})=>{
 });
 test("Table 1 has correct number of colums",async ({page,employee_data})=>{
     //console.log(employee_data)
-    const expected = employee_data[0]?.getColumns()
+    //const expected = (employee_data[0])?.getColumns()
 });
 test("Table 1 has correct number of records",async ({page,employee_data})=>{
     //console.log(employee_data)

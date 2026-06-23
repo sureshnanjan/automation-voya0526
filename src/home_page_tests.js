@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 console.log("Home page tests initialized");
 console.log("Running home page tests...");
 // Example test case for the home page
@@ -6,9 +8,6 @@ console.log("Running home page tests...");
 console.log("Home page tests completed - successfully");
 console.log("Some Tests failed - check the logs for details");
 console.log("Prince- check the logs for details");
-const myvalue: string = "Hello, World!";
+const myvalue = "Hello, World!";
 console.log(myvalue);
-// Title
-// Launch Browser
-// Identify the Title Element
-// check if it matches with "Welcome to the-internet"
+//# sourceMappingURL=home_page_tests.js.map

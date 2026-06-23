@@ -2,6 +2,7 @@
 // https://petstore.swagger.io/
 
 const api_success = {code: 200, type: "success", message: "successful operation"};
+const failure = {code: 200, type: "success", message: "successful operation",notvalid: "This is not a valid attribute"};
 
 const fish_category = {id: 1, name: "fish"};
 const cat_category = {id: 3, name: "cat"};
@@ -45,4 +46,3 @@ const parrot={
 };
 console.log("Paras:", Paras);
 console.log("Parrot:", parrot);
-

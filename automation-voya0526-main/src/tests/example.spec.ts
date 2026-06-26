@@ -1,0 +1,116 @@
+import { test, expect } from '@playwright/test';
+import type { ContextMenuOperations } from '../operations/context_menu_operations.js';
+import { ContextMenuPage } from '../implementation/context_menu_page.js';
+import { Employee } from '../data/employee_data.js';
+test('Heroku Page has correct title', async ({ page }) => {
+  await page.goto('https://the-internet.herokuapp.com/');
+  // Expect a title "to contain" a substring.
+  await expect(page).toHaveTitle(/The Internet/);
+});
+test('Heroku Page has Main Heading Correct', async ({ page }) => {
+  await page.goto('https://the-internet.herokuapp.com/');
+  await expect(page.locator('h1')).toContainText('Welcome to the-internet1');
+});
+test('Heroku Page has Sub Heading Correct', async ({ page }) => {
+  await page.goto('https://the-internet.herokuapp.com/');
+  await expect(page.locator('h2')).toContainText('Available Examples');
+});
+test('Heroku Page has Correct number of Examples', async ({ page }) => {
+  await page.goto('https://the-internet.herokuapp.com/');
+  const noofExamples = (await page.getByRole("listitem").all()).length 
+    await expect(noofExamples).toEqual(50);
+});
+
+test("AB Test Navigates to One of 2 sites whem enabled",()=>{});
+test("AB Test always Navigates NO ABTest sites whem Disabled",()=>{});
+test('sample txt link', async ({ page }) => {
+  await page.goto('https://the-internet.herokuapp.com/download');
+  const downloadPromise = page.waitForEvent('download');
+  //page.waitForEvent("")
+  await page.getByRole('link', { name: 'random_data.txt' }).click();
+  const download = await downloadPromise;
+  console.log(await download.path())
+  console.log(download.suggestedFilename())
+  console.log(download.url())
+  expect(await download.path()).toContain("random_data.txt")
+  
+});
+
+test('Add Remove Element Page works OK', async ({ page }) => {
+  await page.goto('https://the-internet.herokuapp.com/');
+  await page.getByRole('link', { name: 'Add/Remove Elements' }).click();
+  await expect(page.getByRole('heading')).toContainText('Add/Remove Elements');
+  // Do The Add Operation
+  await page.getByRole('button', { name: 'Add Element' }).click();
+  await page.getByRole('button', { name: 'Add Element' }).click();
+  await expect(await page.getByRole('button', { name: 'Delete' }).count()).toBe(2)
+  await expect(1).toBe(1)
+});
+
+test('Buying Angel fish works OK', async ({ page }) => {
+  await page.locator('html').click();
+  await page.getByRole('link', { name: 'Sign In' }).click();
+  await page.locator('#stripes-1601714372').click();
+  await page.locator('#stripes-1601714372').fill('sureshn');
+  await page.locator('#stripes-1601714372').press('Tab');
+  await page.locator('input[name="password"]').fill('pass');
+  await page.getByRole('button', { name: 'Login' }).click();
+  await page.getByRole('link').nth(5).click();
+  await page.getByRole('link', { name: 'FI-SW-01' }).click();
+  await page.getByRole('link', { name: 'Add to Cart' }).first().click();
+  await page.locator('input[name="EST-1"]').click();
+  await page.locator('input[name="EST-1"]').fill('3');
+  await page.getByRole('button', { name: 'Update Cart' }).click();
+  await page.getByRole('link', { name: 'Proceed to Checkout' }).click();
+  await expect(page.getByRole('rowgroup')).toContainText('Payment Details');
+  await page.getByRole('button', { name: 'Continue' }).click();
+  await page.getByText('Order').click();
+  await expect(page.getByRole('rowgroup')).toContainText('Order');
+});
+
+function HandlerForDialogBox(dialog){
+    console.log(dialog)
+}
+test("Context Menu Shows Me correct Data",async ({page})=>{
+  page.on("dialog",async (dialog)=>{
+    console.log(dialog.message());
+    console.log(dialog.type())
+    console.log(await dialog.accept())
+  });
+  await page.goto("/context_menu");
+  //await page.locator("#hot-spot").click({button:"right"}) // left click
+  await page.locator('#hot-spot').click({
+    button: 'right'
+  });
+});
+
+test("Context Menu Shows Me correct Data with PO",async ({page})=>{
+  const expected = "You selected a context menu";
+  const ctxpage:ContextMenuOperations = new ContextMenuPage(page);
+  await ctxpage.invokeContextMenu()
+  const result = await ctxpage.getContextMenuMessage();
+  expect(result).toEqual(expected);
+  //browser.
+});
+test("Test Title",async ({page,browser,context,browserName,request})=>{
+  await page.goto("");
+  //browser.
+});
+
+test("Sortable Data is working correct with correct default records",async ({page})=>{
+  const expected = [
+  new Employee("john","Smith","jsmith@gmail.com",50.00,['edit', 'delete']),
+  new Employee("john","Smith","jsmith@gmail.com",50.00,['edit', 'delete']),
+  new Employee("john","Smith","jsmith@gmail.com",50.00,['edit', 'delete']),
+  new Employee("john","Smith","jsmith@gmail.com",50.00,['edit', 'delete'])]
+  /*
+  Smith	John	jsmith@gmail.com	$50.00	http://www.jsmith.com	edit delete
+Bach	Frank	fbach@yahoo.com	$51.00	http://www.frank.com	edit delete
+Doe	Jason	jdoe@hotmail.com	$100.00	http://www.jdoe.com	edit delete
+Conway	Tim	tconway@earthlink.net	$50.00	http://www.timconway.com	edit delete
+  */
+ 
+ //const actual_result = PO.getTable() 
+})
+
+

@@ -1,5 +1,10 @@
-import type { HomePageOperation,  LogoDetail } from "../operations/home_page_operations.js";
+import type { ABTestingOperations } from "../operations/abtesting_operations.js";
+import type { HomePageOperation } from "../operations/home_page_operations.js";
 import type { Locator, Page } from "@playwright/test";
+import { ABTestingPage } from "./ABTestingPage.js";
+import type { HerokuAppOperations } from "../operations/heroku_app_operations.js";
+import { HoversPage } from "./hovers_page.js";
+import { HerokuConfig } from "../../app.config.js";
 export class HomePage implements HomePageOperation{
     private title_locator:Locator;
     private sub_title_locator:Locator;
@@ -20,7 +25,7 @@ export class HomePage implements HomePageOperation{
         return instance;
     }
      private async goToHome(){
-        await this.page.goto('https://the-internet.herokuapp.com/');
+        await this.page.goto(HerokuConfig.url);
         await this.page.waitForLoadState("domcontentloaded")
      }
 
@@ -36,7 +41,27 @@ export class HomePage implements HomePageOperation{
     getAvailableExamples(): Promise<string[]> {
         return this.example_locator.allTextContents();
     }
-    goToExample(examplename: string): Promise<void> {
-        throw new Error("Method not implemented.");
+    goToExample(examplename: string): Promise<HerokuAppOperations> {
+        this.page.getByRole("link",{name:`${examplename}`}).click();
+        switch (examplename) {
+            case "A/B Testing":
+                return new Promise(resolve=>{
+                    resolve(new ABTestingPage(this.page))
+                });
+            case "Add/ Remove Elements":
+                return new Promise(resolve=>{
+                    resolve(new AddRemovePage(this.page))
+                });  
+            case "Hovers":
+                return new Promise(resolve=>{
+                    resolve(new HoversPage(this.page))
+                });                 
+        
+            default:
+                return new Promise(resolve=>{
+                    resolve(this);
+                });       ;
+        }
+         
     }
 }

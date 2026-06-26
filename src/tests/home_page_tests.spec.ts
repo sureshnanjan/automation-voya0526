@@ -1,6 +1,10 @@
 import {test,expect} from '@playwright/test'
-import { HomePage } from '../implementation/home_page';
-import { HomePageWDIO } from '../implementation/home_page_WDIO';
+//import { HomePage } from '../implementation/home_page';
+//import { HomePageWDIO } from '../implementation/home_page_WDIO';
+import { GetHerokuAppHomePage } from '../utilities/AppHelper';
+import type { HomePageOperation } from '../operations/home_page_operations';
+import type { ABTestingOperations } from '../operations/abtesting_operations';
+import type { HoversPageOperation } from '../operations/hovers_page_operations';
 
 test('Heroku Page has Main Heading Correct', async ({ page }) => {
   await page.goto('https://the-internet.herokuapp.com/');
@@ -16,7 +20,7 @@ test("Heroku Title Check with PO", async ({page})=>{
     await expect(actual_title).toEqual(expected_title)
 });
 test("Subtitle Check works OK",async ({page})=>{
-    const hp = await HomePage.Create(page)
+    const hp = GetHerokuAppHomePage();
    // const hp = new HomePageWDIO();
     const expected_sub_title = "Available Examples";
     const actual_sub_title = await hp.getSubTitle();
@@ -32,6 +36,18 @@ test("Available Examples Count is 44",async ({page})=>{
     await expect(actual_example_count).toEqual(expected_example_count)
 });
 
-test("Some Title",async ({page,browser,browserName,request})=>{
-    
+test("Navigating to AB Testing works",async ({page})=>{
+    const herokuhome:HomePageOperation = HomePage.Create(page)
+    const expected = ["AB Test Control", "AB Test Variation1"]
+    const resultPage:ABTestingOperations = herokuhome.goToExample("A/B Testing") as ABTestingOperations;
+    const resultTitle = resultPage.getTitle()
+    expect(expected).toContain(resultPage) 
+});
+
+test("Navigating to AB Testing works",async ({page})=>{
+    const herokuhome:HomePageOperation = HomePage.Create(page)
+    const expected = "Hovers";//"AB Test Control", "AB Test Variation1"]""
+    const resultPage:HoversPageOperation = herokuhome.goToExample("Hovers") as HoversPageOperation;
+    const resultTitle = resultPage.getTitle()
+    expect(expected).toContain(resultPage) 
 });

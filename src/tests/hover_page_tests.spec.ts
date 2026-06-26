@@ -1,6 +1,6 @@
 import {test,expect} from '@playwright/test'
 import type { HoversPageOperation } from '../operations/hovers_page_operations';
-import { HoversPage } from '../implementation/hover_page';
+import { HoversPage } from '../implementation/hovers_page';
 test("Title is OK", async ({page})=>{
     // Pre Condition
     //   - Access the hovers page

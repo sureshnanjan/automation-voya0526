@@ -1,7 +1,7 @@
 import { HerokuConfig } from "../../app.config";
 import { HomePage } from "../implementation/home_page";
 // Factory Method
-export function GetHerokuAppHomePage(){
+export function GetHerokuAppHomePage(page){
 
     if (HerokuConfig.tool === 'playwright') {
 
